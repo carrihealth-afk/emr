@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | CarriHealth</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">CarriHealth</div>
+
+      <ul class="nav">
+        <li><a href="#" class="active"><span class="icon">▦</span> Dashboard</a></li>
+        <li class="nav-section">Clinical</li>
+        <li><a href="#"><span class="icon">👤</span> Patients</a></li>
+        <li><a href="#"><span class="icon">📅</span> Appointments</a></li>
+        <li><a href="#"><span class="icon">🩺</span> Encounters</a></li>
+        <li><a href="#"><span class="icon">📝</span> Clinical notes</a></li>
+        <li><a href="#"><span class="icon">📋</span> Orders</a></li>
+        <li><a href="#"><span class="icon">🧪</span> Lab results</a></li>
+        <li><a href="#"><span class="icon">💊</span> Prescriptions</a></li>
+        <li class="nav-section">Management</li>
+        <li><a href="#"><span class="icon">💳</span> Billing</a></li>
+        <li><a href="#"><span class="icon">⚙</span> Administration</a></li>
+      </ul>
+
+      <div class="logout">
+        <button type="button" class="btn" id="logoutBtn">Sign out</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="hospital-badge">
+          <div class="h-icon">🏥</div>
+          <div>
+            <strong id="hospitalName">Hospital</strong>
+            <span>Hospital code: <b id="hospitalCode">-</b></span>
+          </div>
+        </div>
+
+        <div class="search">
+          <input type="search" placeholder="Search patients by name or MRN…">
+        </div>
+
+        <div class="user-chip">
+          <div class="avatar" id="avatar">S</div>
+          <div>
+            <strong id="userEmail">staff@hospital.org</strong>
+            <span>Staff · Doctor</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="demo-note">Demo mode: everything on this page is sample data. Nothing is connected to the backend yet.</div>
+
+      <div class="page-head">
+        <div>
+          <h1 id="greeting">Good day</h1>
+          <p id="today"></p>
+        </div>
+        <button type="button" class="btn btn-primary">+ Register patient</button>
+      </div>
+
+      <section class="stats">
+        <div class="stat">
+          <div class="label">Patients today</div>
+          <div class="value">48</div>
+          <div class="delta">▲ 12% vs last week</div>
+        </div>
+        <div class="stat">
+          <div class="label">Appointments</div>
+          <div class="value">32</div>
+          <div class="delta">9 remaining</div>
+        </div>
+        <div class="stat">
+          <div class="label">Admitted (inpatients)</div>
+          <div class="value">117</div>
+          <div class="delta down">▼ 3 beds available</div>
+        </div>
+        <div class="stat">
+          <div class="label">Pending lab results</div>
+          <div class="value">14</div>
+          <div class="delta down">3 marked urgent</div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <h3>Today's appointments</h3>
+            <a href="#">View all</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Time</th><th>Patient</th><th>MRN</th><th>Department</th><th>Status</th></tr>
+              </thead>
+              <tbody id="appointmentsBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Quick actions</h3>
+          </div>
+          <div class="quick-actions">
+            <button type="button" class="btn btn-ghost">New encounter</button>
+            <button type="button" class="btn btn-ghost">Book appointment</button>
+            <button type="button" class="btn btn-ghost">Order lab test</button>
+            <button type="button" class="btn btn-ghost">Write prescription</button>
+          </div>
+          <div class="card-head">
+            <h3>Alerts</h3>
+          </div>
+          <ul class="list" id="alertsList"></ul>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <h3>Recent lab results</h3>
+            <a href="#">View all</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Patient</th><th>Test</th><th>Result</th><th>Flag</th><th>Reported</th></tr>
+              </thead>
+              <tbody id="labsBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Ward occupancy</h3>
+          </div>
+          <ul class="list" id="wardsList"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

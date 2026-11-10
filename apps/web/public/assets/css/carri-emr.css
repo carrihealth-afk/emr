@@ -1,0 +1,417 @@
+.emr-main {
+	width: min(100% - 11.2%, 1280px);
+	margin: 0 auto;
+}
+
+.emr-hero {
+	padding: clamp(42px, 5vw, 76px) 0 74px;
+}
+
+.emr-hero-copy {
+	display: grid;
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+	align-items: start;
+	gap: 7%;
+	margin-bottom: 48px;
+}
+
+.emr-heading .section-eyebrow {
+	margin: 0 0 28px;
+}
+
+.emr-heading h1 {
+	margin: 0;
+	color: var(--ink);
+	font-size: 60px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.15;
+}
+
+.emr-intro {
+	padding-top: 30px;
+}
+
+.emr-intro p {
+	margin: 0;
+	color: var(--muted);
+	font-size: 17px;
+	line-height: 1.7;
+}
+
+.emr-get-started {
+	min-height: 54px;
+	gap: 22px;
+	margin-top: 30px;
+	padding: 0 24px;
+	font-size: 14px;
+}
+
+.emr-hero-image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 3.24 / 1;
+	border-radius: 30px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.identity-section,
+.capabilities-section,
+.facility-benefits-section {
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	background: #edf5f1;
+}
+
+.identity-section {
+	padding: 82px 5.2%;
+}
+
+.identity-inner {
+	display: grid;
+	width: min(100%, 1280px);
+	grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+	align-items: center;
+	gap: 8%;
+	margin: 0 auto;
+}
+
+.identity-copy h2,
+.outcomes-inner h2,
+.capabilities-inner > h2,
+.emr-trust-inner h2,
+.facility-benefits-inner > h2 {
+	margin: 0;
+	color: var(--ink);
+	font-size: 42px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.2;
+}
+
+.identity-copy h2 {
+	margin-bottom: 24px;
+}
+
+.identity-copy p,
+.outcomes-inner > p,
+.capabilities-intro,
+.emr-trust-inner p {
+	margin: 0 0 18px;
+	color: var(--muted);
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.patient-card {
+	min-height: 280px;
+	padding: 30px;
+	border: 1px solid #d5e4dc;
+	border-radius: 24px;
+	background: #fff;
+}
+
+.patient-card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.patient-card-header img {
+	display: block;
+	width: 180px;
+	height: auto;
+}
+
+.patient-card-header > span {
+	color: var(--green);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.patient-card-details {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin: 34px 0 32px;
+}
+
+.patient-avatar {
+	position: relative;
+	display: block;
+	width: 64px;
+	height: 64px;
+	flex: 0 0 64px;
+	border-radius: 50%;
+	background: #e3f7ed;
+}
+
+.patient-avatar::before {
+	position: absolute;
+	top: 15px;
+	left: 27px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #8bcfae;
+	content: '';
+}
+
+.patient-avatar::after {
+	position: absolute;
+	bottom: 14px;
+	left: 20px;
+	width: 24px;
+	height: 13px;
+	border-radius: 14px 14px 8px 8px;
+	background: #8bcfae;
+	content: '';
+}
+
+.patient-card-details p {
+	margin: 0 0 8px;
+	color: #758781;
+	font-size: 11px;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.patient-card-details strong {
+	color: #21483e;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.15;
+}
+
+.patient-card-rule {
+	height: 2px;
+	background: var(--green);
+}
+
+.outcomes-section {
+	padding: 82px 5.2% 76px;
+	background: #fff;
+}
+
+.outcomes-inner {
+	width: min(100%, 1280px);
+	margin: 0 auto;
+}
+
+.outcomes-inner h2 {
+	margin-bottom: 24px;
+}
+
+.outcomes-inner > p {
+	margin-bottom: 16px;
+}
+
+.outcomes-grid,
+.facility-benefits-grid {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	column-gap: 42px;
+	row-gap: 26px;
+	margin: 36px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.outcomes-grid li,
+.facility-benefits-grid li {
+	min-height: 126px;
+	padding-top: 22px;
+	border-top: 1px solid #dfe7e3;
+}
+
+.outcomes-grid li:nth-child(-n + 3) {
+	grid-column: span 2;
+}
+
+.outcomes-grid li:nth-child(n + 4) {
+	grid-column: span 3;
+}
+
+.outcomes-grid li span,
+.facility-benefits-grid li span {
+	color: var(--green);
+	font-size: 12px;
+	line-height: 1;
+}
+
+.outcomes-grid li p,
+.facility-benefits-grid li p {
+	margin: 28px 0 0;
+	color: #536762;
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.capabilities-section {
+	padding: 82px 5.2% 84px;
+}
+
+.capabilities-inner {
+	width: min(100%, 1280px);
+	margin: 0 auto;
+}
+
+.capabilities-inner > .section-eyebrow {
+	margin: 0 0 32px;
+}
+
+.capabilities-inner > h2 {
+	margin-bottom: 24px;
+}
+
+.capabilities-intro {
+	margin-bottom: 40px;
+}
+
+.capability-card {
+	margin: 0 0 16px;
+	padding: 30px 34px;
+	border: 1px solid #e1ebe7;
+	border-radius: 24px;
+	background: #fff;
+}
+
+.capability-card summary {
+	display: grid;
+	grid-template-columns: 56px minmax(0, 1fr) 18px;
+	align-items: start;
+	gap: 20px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.capability-card summary::-webkit-details-marker {
+	display: none;
+}
+
+.capability-number {
+	padding-top: 5px;
+	color: #467263;
+	font-size: 13px;
+	line-height: 1;
+}
+
+.capability-title {
+	color: var(--ink);
+	font-size: 27px;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+.capability-card summary::after {
+	width: 12px;
+	height: 12px;
+	background:
+		linear-gradient(#7b9d92, #7b9d92) center / 10px 1px no-repeat,
+		linear-gradient(#7b9d92, #7b9d92) center / 1px 10px no-repeat;
+	content: '';
+}
+
+.capability-card[open] summary::after {
+	background: linear-gradient(#7b9d92, #7b9d92) center / 10px 1px no-repeat;
+}
+
+.capability-content {
+	margin: 24px 38px 0 76px;
+	color: var(--muted);
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.capability-content p {
+	margin: 0 0 18px;
+}
+
+.capability-content p:last-child {
+	margin-bottom: 0;
+}
+
+.capability-content strong {
+	font-weight: 500;
+}
+
+.emr-trust-section {
+	padding: 82px 5.2%;
+	background: #fff;
+}
+
+.emr-trust-inner {
+	display: grid;
+	width: min(100%, 1280px);
+	grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr);
+	align-items: start;
+	gap: 8%;
+	margin: 0 auto;
+}
+
+.emr-trust-inner h2 {
+	font-size: 42px;
+}
+
+.emr-trust-inner p {
+	margin-bottom: 18px;
+}
+
+.emr-trust-inner .privacy-learn {
+	margin: 4px 0 18px;
+	font-size: 14px;
+}
+
+.privacy-link {
+	display: inline-flex;
+	min-height: 54px;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	padding: 0 24px;
+	border-radius: 999px;
+	background: var(--green);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.privacy-link:hover {
+	background: #104f41;
+	transform: translateY(-1px);
+}
+
+.emr-trust-inner .privacy-link,
+.facility-contact-link {
+	min-height: 54px;
+	margin: 0;
+	padding: 0 24px;
+}
+
+.facility-benefits-section {
+	padding: 82px 5.2% 78px;
+}
+
+.facility-benefits-inner {
+	width: min(100%, 1280px);
+	margin: 0 auto;
+}
+
+.facility-benefits-inner > h2 {
+	margin-bottom: 32px;
+}
+
+.facility-benefits-grid {
+	margin-top: 0;
+}
+
+.facility-benefits-grid li {
+	grid-column: span 2;
+}
+
+.facility-contact-link {
+	margin-top: 14px;
+}

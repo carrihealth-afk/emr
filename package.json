@@ -1,0 +1,9 @@
+{
+  "name": "emr",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:api": "npm run dev -w @emr/api",
+    "start:api": "npm start -w @emr/api"
+  }
+}

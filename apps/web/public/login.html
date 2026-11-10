@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff Login | CarriHealth</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="login-page">
+    <aside class="login-brand">
+      <div class="logo">CarriHealth</div>
+      <div class="brand-copy">
+        <h1>Electronic medical records for your hospital.</h1>
+        <p>Patient records, appointments, orders, lab results, prescriptions and billing in one place, with access based on each staff member's role.</p>
+      </div>
+      <small>Authorized hospital staff only. All access is logged.</small>
+    </aside>
+
+    <main class="login-panel">
+      <form class="login-card" id="loginForm" novalidate>
+        <h2>Staff sign in</h2>
+        <p class="subtitle">Sign in with your hospital credentials.</p>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="name@hospital.org" autocomplete="username" required>
+        </div>
+
+        <div class="field">
+          <label for="hospitalCode">Hospital code</label>
+          <input type="text" id="hospitalCode" name="hospitalCode" placeholder="e.g. GH-001" autocomplete="organization" required>
+          <p class="hint">Your hospital's administrator gives you this code.</p>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+            <button type="button" class="password-toggle" id="togglePassword">Show</button>
+          </div>
+        </div>
+
+        <div class="login-row">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+
+        <p class="login-footer">
+          Having trouble signing in? Contact <a href="mailto:support@carrihealth.com">support@carrihealth.com</a>.<br>
+          For security concerns or complaints, email <a href="mailto:security@carrihealth.com">security@carrihealth.com</a>.
+        </p>
+      </form>
+    </main>
+  </div>
+
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
