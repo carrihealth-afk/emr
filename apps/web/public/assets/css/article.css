@@ -1,0 +1,128 @@
+.article-main {
+	width: min(100% - 10%, 1280px);
+	margin: 0 auto;
+}
+
+.article-hero {
+	padding-top: 72px;
+}
+
+.article-heading {
+	margin-left: 160px;
+}
+
+.article-heading .section-eyebrow {
+	margin: 0 0 40px;
+}
+
+.article-heading h1 {
+	margin: 0;
+	color: var(--ink);
+	font-size: 60px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.15;
+}
+
+.article-heading h1::after {
+	display: block;
+	width: 72px;
+	height: 3px;
+	margin-top: 24px;
+	background: var(--green);
+	content: '';
+}
+
+.article-hero-image {
+	display: block;
+	width: 100%;
+	height: 392px;
+	margin-top: 62px;
+	border-radius: 30px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.article-layout {
+	display: grid;
+	grid-template-columns: 280px minmax(0, 1fr);
+	align-items: start;
+	gap: 40px;
+	margin: 76px 0 100px;
+}
+
+.article-sidebar {
+	position: sticky;
+	top: 32px;
+}
+
+.article-sidebar > .section-eyebrow {
+	margin: 0 0 26px;
+}
+
+.article-sidebar nav {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.article-sidebar nav a {
+	color: var(--muted);
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.article-sidebar nav a:hover {
+	color: var(--green);
+}
+
+.all-insights-link {
+	display: inline-flex;
+	min-height: 54px;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 28px;
+	padding: 0 24px;
+	border-radius: 999px;
+	background: var(--green);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.all-insights-link:hover {
+	background: #104f41;
+	transform: translateY(-1px);
+}
+
+.all-insights-link span {
+	font-size: 15px;
+}
+
+.article-body {
+	max-width: 800px;
+	color: var(--muted);
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.article-body > p,
+.article-body section p {
+	margin: 0 0 18px;
+}
+
+.article-body section {
+	margin-top: 42px;
+}
+
+.article-body h2 {
+	margin: 0 0 18px;
+	color: var(--ink);
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.3;
+}
