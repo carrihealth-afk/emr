@@ -242,3 +242,171 @@
 .hiring-copy p {
 	margin: 0;
 }
+@media (max-width: 480px) {
+	.careers-main {
+		width: 100%;
+	}
+
+	.careers-hero {
+		display: block;
+		padding: 46px 24px 40px;
+	}
+
+	.careers-copy .section-eyebrow {
+		margin-bottom: 30px;
+	}
+
+	.careers-copy h1 {
+		margin-bottom: 36px;
+		font-size: 45px;
+		letter-spacing: -0.045em;
+		line-height: 1.11;
+	}
+
+	.careers-copy h1 br {
+		display: none;
+	}
+
+	.careers-copy > p:not(.section-eyebrow) {
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.view-roles-link {
+		min-height: 52px;
+		gap: 30px;
+		margin-top: 10px;
+		padding: 0 22px;
+		font-size: 15px;
+	}
+
+	.view-roles-link span {
+		font-size: 17px;
+	}
+
+	.careers-hero-image {
+		height: 260px;
+		margin-top: 32px;
+		aspect-ratio: auto;
+		border-radius: 20px;
+	}
+
+	.why-carri-section,
+	.values-section,
+	.hiring-section {
+		width: 100%;
+		margin-left: 0;
+		padding: 56px 24px 64px;
+	}
+
+	.hiring-section {
+		padding-bottom: 72px;
+	}
+
+	.why-carri-inner > h2,
+	.values-inner > h2,
+	.hiring-inner > h2 {
+		margin-bottom: 32px;
+		font-size: 32px;
+		letter-spacing: -0.035em;
+		line-height: 1.13;
+	}
+
+	.why-carri-grid {
+		grid-template-columns: 1fr;
+		gap: 22px;
+	}
+
+	.why-carri-card {
+		min-height: 0;
+		padding: 30px 24px;
+		border-radius: 28px;
+	}
+
+	.why-carri-icon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.why-carri-card h3 {
+		margin: 28px 0 20px;
+		font-size: 22px;
+		line-height: 1.25;
+	}
+
+	.why-carri-card p,
+	.values-grid p {
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.values-section {
+		background: var(--page);
+	}
+
+	.values-grid {
+		grid-template-columns: 1fr;
+		row-gap: 0;
+	}
+
+	.values-grid li {
+		min-height: 0;
+		padding: 26px 0 24px;
+		border-top-color: var(--ink);
+	}
+
+	.values-grid li > span {
+		font-size: 13px;
+	}
+
+	.values-grid h3 {
+		margin: 24px 0 18px;
+		font-size: 26px;
+		line-height: 1.2;
+	}
+
+	.values-grid p {
+		color: var(--ink);
+	}
+
+	.hiring-step {
+		margin-bottom: 16px;
+		padding: 24px 24px 22px;
+		border-radius: 28px;
+	}
+
+	.hiring-step summary {
+		grid-template-columns: minmax(0, 1fr) 12px;
+		gap: 22px 0;
+	}
+
+	.hiring-number {
+		grid-row: 1;
+		padding-top: 0;
+		color: #53728b;
+		font-size: 13px;
+	}
+
+	.hiring-step summary::after {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: center;
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat, linear-gradient(#145d4e, #145d4e) center / 1.5px 12px no-repeat;
+	}
+
+	.hiring-step[open] summary::after {
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat;
+	}
+
+	.hiring-title {
+		grid-column: 1 / -1;
+		font-size: 21.5px;
+		letter-spacing: -0.01em;
+	}
+
+	.hiring-copy {
+		margin: 25px 0 0;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+}

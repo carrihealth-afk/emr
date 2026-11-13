@@ -415,3 +415,264 @@
 .facility-contact-link {
 	margin-top: 14px;
 }
+@media (max-width: 480px) {
+	.emr-main {
+		width: 100%;
+	}
+
+	.emr-hero {
+		padding: 46px 24px 40px;
+	}
+
+	.emr-hero-copy {
+		grid-template-columns: 1fr;
+		gap: 0;
+		margin-bottom: 32px;
+	}
+
+	.emr-heading .section-eyebrow {
+		margin-bottom: 30px;
+	}
+
+	.emr-heading h1 {
+		font-size: 44px;
+		letter-spacing: -0.045em;
+		line-height: 1.11;
+	}
+
+	.emr-heading h1 br {
+		display: none;
+	}
+
+	.emr-intro {
+		padding-top: 38px;
+	}
+
+	.emr-intro p {
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.emr-get-started {
+		min-height: 52px;
+		gap: 30px;
+		margin-top: 34px;
+		padding: 0 22px;
+		font-size: 15px;
+	}
+
+	.emr-get-started span {
+		font-size: 17px;
+	}
+
+	.emr-hero-image {
+		height: 260px;
+		aspect-ratio: auto;
+		border-radius: 20px;
+	}
+
+	.identity-section,
+	.outcomes-section,
+	.capabilities-section,
+	.emr-trust-section,
+	.facility-benefits-section {
+		width: 100%;
+		margin-left: 0;
+		padding: 56px 24px;
+	}
+
+	.identity-inner,
+	.emr-trust-inner {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.identity-copy h2,
+	.outcomes-inner h2,
+	.capabilities-inner > h2,
+	.emr-trust-inner h2,
+	.facility-benefits-inner > h2 {
+		font-size: 32px;
+		letter-spacing: -0.035em;
+		line-height: 1.13;
+	}
+
+	.identity-copy h2,
+	.outcomes-inner h2,
+	.emr-trust-inner h2 {
+		margin-bottom: 26px;
+	}
+
+	.identity-copy p,
+	.outcomes-inner > p,
+	.capabilities-intro,
+	.emr-trust-inner p {
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.patient-card {
+		min-height: 0;
+		margin-top: 38px;
+		padding: 22px 18px 52px;
+		border-radius: 20px;
+	}
+
+	.patient-card-header img {
+		width: 116px;
+	}
+
+	.patient-card-header > span {
+		font-size: 10px;
+	}
+
+	.patient-card-details {
+		gap: 16px;
+		margin: 16px 0 18px;
+	}
+
+	.patient-avatar {
+		width: 41px;
+		height: 41px;
+		flex-basis: 41px;
+	}
+
+	.patient-avatar::before {
+		top: 10px;
+		left: 17px;
+		width: 7px;
+		height: 7px;
+	}
+
+	.patient-avatar::after {
+		bottom: 9px;
+		left: 13px;
+		width: 15px;
+		height: 8px;
+	}
+
+	.patient-card-details p {
+		margin-bottom: 6px;
+		font-size: 6.5px;
+	}
+
+	.patient-card-details strong {
+		font-size: 16px;
+	}
+
+	.patient-card-rule {
+		height: 1px;
+	}
+
+	.outcomes-section {
+		background: var(--page);
+	}
+
+	.outcomes-grid,
+	.facility-benefits-grid {
+		grid-template-columns: 1fr;
+		row-gap: 0;
+		margin-top: 36px;
+	}
+
+	.outcomes-grid li:nth-child(n),
+	.facility-benefits-grid li {
+		grid-column: auto;
+		min-height: 0;
+		padding: 28px 0 24px;
+		border-top-color: #dcdfd3;
+	}
+
+	.outcomes-grid li span,
+	.facility-benefits-grid li span {
+		font-size: 12px;
+	}
+
+	.outcomes-grid li p,
+	.facility-benefits-grid li p {
+		margin-top: 26px;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.capabilities-inner > .section-eyebrow {
+		margin-bottom: 36px;
+	}
+
+	.capabilities-inner > h2 {
+		margin-bottom: 30px;
+	}
+
+	.capabilities-intro {
+		margin-bottom: 38px;
+	}
+
+	.capability-card {
+		padding: 24px 24px 26px;
+		border-radius: 28px;
+	}
+
+	.capability-card summary {
+		grid-template-columns: minmax(0, 1fr) 12px;
+		gap: 22px 0;
+	}
+
+	.capability-number {
+		grid-row: 1;
+		padding-top: 0;
+		color: #53728b;
+	}
+
+	.capability-card summary::after {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: center;
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat, linear-gradient(#145d4e, #145d4e) center / 1.5px 12px no-repeat;
+	}
+
+	.capability-card[open] summary::after {
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat;
+	}
+
+	.capability-title {
+		grid-column: 1 / -1;
+		font-size: 21.5px;
+		letter-spacing: -0.015em;
+	}
+
+	.capability-content {
+		margin: 20px 0 0;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.capability-content strong {
+		font-weight: 400;
+	}
+
+	.emr-trust-inner .privacy-learn {
+		margin: 4px 0 20px;
+		font-size: 16px;
+	}
+
+	.privacy-link,
+	.emr-trust-inner .privacy-link,
+	.facility-contact-link {
+		min-height: 52px;
+		gap: 30px;
+		padding: 0 22px;
+		font-size: 15px;
+	}
+
+	.privacy-link span {
+		font-size: 17px;
+	}
+
+	.facility-benefits-inner > h2 {
+		margin-bottom: 36px;
+	}
+
+	.facility-contact-link {
+		margin-top: 30px;
+	}
+}

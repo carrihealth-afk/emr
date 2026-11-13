@@ -260,3 +260,149 @@
 		gap: 6%;
 	}
 }
+
+@media (max-width: 480px) {
+	.about-main {
+		width: 100%;
+	}
+
+	.about-hero {
+		padding: 46px 24px 40px;
+	}
+
+	.about-copy {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		margin-bottom: 36px;
+	}
+
+	.about-heading .section-eyebrow {
+		margin-bottom: 22px;
+	}
+
+	.about-heading h1 {
+		font-size: 44px;
+		letter-spacing: -0.045em;
+		line-height: 1.13;
+	}
+
+	.about-heading h1 br,
+	.about-challenge-heading h2 br,
+	.vision-inner h2 br {
+		display: none;
+	}
+
+	.about-intro {
+		max-width: none;
+		padding-top: 0;
+	}
+
+	.about-intro p,
+	.about-challenge-copy p,
+	.beyond-copy p {
+		margin-bottom: 18px;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.about-hero-image {
+		height: 260px;
+		aspect-ratio: auto;
+		border-radius: 20px;
+	}
+
+	.about-challenge,
+	.beyond-section,
+	.vision-section {
+		width: 100%;
+		min-height: 0;
+		margin-left: 0;
+		padding: 56px 24px;
+	}
+
+	.about-challenge-inner,
+	.beyond-inner {
+		grid-template-columns: 1fr;
+		min-height: 0;
+		gap: 0;
+	}
+
+	.about-challenge-heading .section-eyebrow {
+		margin-bottom: 30px;
+	}
+
+	.about-challenge-heading h2 {
+		font-size: 32px;
+		letter-spacing: -0.03em;
+		line-height: 1.22;
+	}
+
+	.about-challenge-copy {
+		padding-top: 34px;
+	}
+
+	.beyond-copy h2 {
+		margin-bottom: 30px;
+		font-size: 36px;
+		letter-spacing: -0.035em;
+	}
+
+	.beyond-copy p:last-child {
+		margin-bottom: 0;
+	}
+
+	.anonymization-flow {
+		width: 100%;
+		min-height: 0;
+		margin: 36px 0 0;
+		padding: 44px 40px 38px;
+		border-radius: 40px;
+	}
+
+	.flow-mark {
+		width: 68px;
+		height: 58px;
+		margin-bottom: 26px;
+	}
+
+	.flow-step {
+		gap: 12px;
+		font-size: 15px;
+	}
+
+	.flow-connector {
+		height: 24px;
+	}
+
+	.flow-step.is-highlighted::before {
+		background: #dae7bb;
+	}
+
+	.vision-inner .section-eyebrow {
+		margin-bottom: 36px;
+	}
+
+	.vision-mark {
+		width: 70px;
+		height: 60px;
+		margin-bottom: 42px;
+	}
+
+	.vision-inner h2 {
+		font-size: 32px;
+		letter-spacing: -0.035em;
+		line-height: 1.13;
+	}
+
+	.about-contact-actions {
+		flex: 0 0 auto;
+		align-items: flex-start;
+		gap: 14px;
+	}
+
+	.about-contact-actions .contact-link {
+		width: auto;
+		justify-content: flex-start;
+		gap: 28px;
+	}
+}

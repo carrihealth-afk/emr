@@ -54,6 +54,10 @@
 	overflow: visible;
 }
 
+.how-diagram-panel .network-diagram-mobile {
+	display: none;
+}
+
 .ecosystem-section {
 	width: 100vw;
 	margin-left: calc(50% - 50vw);
@@ -211,4 +215,158 @@
 	justify-content: space-between;
 	gap: 10px;
 	padding: 0 22px;
+}
+
+@media (max-width: 480px) {
+	.how-main {
+		width: 100%;
+	}
+
+	.how-hero {
+		display: block;
+		min-height: 0;
+		padding: 46px 24px 48px;
+	}
+
+	.how-copy {
+		padding-top: 0;
+	}
+
+	.how-copy .section-eyebrow {
+		margin-bottom: 22px;
+	}
+
+	.how-copy h1 {
+		font-size: 46px;
+		letter-spacing: -0.045em;
+		line-height: 1.09;
+	}
+
+	.how-copy h1 br,
+	.how-contact-panel h2 br {
+		display: none;
+	}
+
+	.how-intro {
+		margin-top: 30px;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.how-diagram-panel {
+		display: block;
+		min-height: 0;
+		margin-top: 34px;
+		padding: 0;
+		border-radius: 0;
+		background: none;
+	}
+
+	.how-diagram-panel .network-diagram {
+		display: none;
+	}
+
+	.how-diagram-panel .network-diagram-mobile {
+		display: block;
+		width: 100%;
+	}
+
+	.ecosystem-section {
+		width: 100%;
+		margin-left: 0;
+		padding: 56px 24px;
+		background: #edf4f0;
+	}
+
+	.ecosystem-inner > .section-eyebrow {
+		margin-bottom: 34px;
+	}
+
+	.ecosystem-step {
+		padding: 26px 24px 24px;
+		border-color: #dce6e0;
+		border-radius: 28px;
+	}
+
+	.ecosystem-step-final {
+		min-height: 0;
+		margin-bottom: 0;
+	}
+
+	.ecosystem-step summary {
+		grid-template-columns: minmax(0, 1fr) 12px;
+		gap: 22px 0;
+	}
+
+	.step-number {
+		grid-row: 1;
+		padding-top: 0;
+		color: #53728b;
+		font-size: 13px;
+	}
+
+	.ecosystem-step summary::after {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: center;
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat, linear-gradient(#145d4e, #145d4e) center / 1.5px 12px no-repeat;
+	}
+
+	.ecosystem-step[open] summary::after {
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat;
+	}
+
+	.step-title {
+		grid-column: 1 / -1;
+		font-size: 21.5px;
+		letter-spacing: -0.02em;
+		line-height: 1.64;
+	}
+
+	.step-content {
+		margin: 24px 0 0;
+		font-size: 15.8px;
+		line-height: 1.7;
+	}
+
+	.step-content ul {
+		margin: 18px 0;
+	}
+
+	.step-content li {
+		padding-left: 0;
+	}
+
+	.step-content li::before {
+		position: static;
+		display: inline;
+		margin-right: 4px;
+		background: none;
+		content: '\2022';
+	}
+
+	.privacy-link {
+		min-height: 52px;
+		gap: 34px;
+		margin: 17px 0 33px;
+		padding: 0 22px;
+		font-size: 15px;
+	}
+
+	.privacy-link span {
+		font-size: 21px;
+		font-weight: 600;
+	}
+
+	.how-contact-actions {
+		flex: 0 0 auto;
+		align-items: flex-start;
+		gap: 14px;
+	}
+
+	.how-contact-actions .contact-link {
+		width: auto;
+		justify-content: flex-start;
+		gap: 28px;
+	}
 }

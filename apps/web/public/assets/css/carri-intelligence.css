@@ -308,3 +308,170 @@
 .intelligence-contact-section {
 	padding: 140px 5.2% 66px;
 }
+@media (max-width: 480px) {
+	.intelligence-main {
+		width: 100%;
+	}
+
+	.intelligence-hero {
+		display: block;
+		min-height: 0;
+		padding: 46px 24px 56px;
+	}
+
+	.intelligence-hero-copy .section-eyebrow {
+		margin-bottom: 30px;
+	}
+
+	.intelligence-hero-copy h1 {
+		margin-bottom: 30px;
+		font-size: 44px;
+		letter-spacing: -0.045em;
+		line-height: 1.13;
+	}
+
+	.intelligence-hero-copy h1 br,
+	.intelligence-explainer h2 br {
+		display: none;
+	}
+
+	.intelligence-hero-copy > p:not(.section-eyebrow) {
+		margin-bottom: 18px;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.intelligence-contact-link {
+		min-height: 52px;
+		gap: 30px;
+		margin-top: 12px;
+		padding: 0 22px;
+		font-size: 15px;
+	}
+
+	.intelligence-contact-link span {
+		font-size: 17px;
+	}
+
+	.intelligence-flow {
+		left: 0;
+		min-height: 0;
+		margin: 32px 0 0;
+		padding: 42px 40px 38px;
+		border-radius: 40px;
+	}
+
+	.intelligence-flow > img {
+		width: 68px;
+		height: 58px;
+		margin-bottom: 26px;
+	}
+
+	.intelligence-flow-step {
+		min-height: 56px;
+		gap: 12px;
+		font-size: 15px;
+	}
+
+	.intelligence-flow-step.is-highlighted::before {
+		background: #dae7bb;
+	}
+
+	.intelligence-explainer,
+	.intelligence-capabilities-section,
+	.responsible-use-section,
+	.intelligence-audience-section {
+		width: 100%;
+		margin-left: 0;
+		padding: 56px 24px;
+	}
+
+	.intelligence-explainer-inner,
+	.responsible-use-inner {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.intelligence-explainer h2,
+	.intelligence-capabilities-inner > h2,
+	.responsible-use-inner h2,
+	.intelligence-audience-inner > h2 {
+		margin-bottom: 32px;
+		font-size: 32px;
+		letter-spacing: -0.035em;
+		line-height: 1.13;
+	}
+
+	.intelligence-explainer-inner > div p,
+	.responsible-use-inner > div p {
+		margin-bottom: 18px;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.intelligence-card {
+		margin-bottom: 16px;
+		padding: 24px 24px 26px;
+		border-radius: 28px;
+	}
+
+	.intelligence-card summary {
+		grid-template-columns: minmax(0, 1fr) 12px;
+		gap: 22px 0;
+	}
+
+	.intelligence-number {
+		grid-row: 1;
+		padding-top: 0;
+		color: #53728b;
+	}
+
+	.intelligence-card summary::after {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: center;
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat, linear-gradient(#145d4e, #145d4e) center / 1.5px 12px no-repeat;
+	}
+
+	.intelligence-card[open] summary::after {
+		background: linear-gradient(#145d4e, #145d4e) center / 12px 1.5px no-repeat;
+	}
+
+	.intelligence-card-title {
+		grid-column: 1 / -1;
+		font-size: 21.5px;
+		letter-spacing: -0.015em;
+	}
+
+	.intelligence-card-content {
+		margin: 20px 0 0;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	.intelligence-capabilities-section {
+		padding-bottom: 56px;
+	}
+
+	.audience-grid {
+		grid-template-columns: 1fr;
+		row-gap: 0;
+	}
+
+	.audience-grid li,
+	.audience-grid li:nth-child(7) {
+		grid-column: auto;
+		min-height: 0;
+		padding: 22px 0 20px;
+	}
+
+	.audience-grid li p {
+		margin-top: 22px;
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.intelligence-contact-section {
+		padding: 56px 24px;
+	}
+}
